@@ -30,12 +30,18 @@ def build_video_from_images(image_paths, logo_path=None, caption=None, logo_size
         # Подпись внизу по центру
         if caption:
             txt = (
-                TextClip(caption, fontsize=48, color="white", font="Arial-Bold")
+                TextClip(
+                    caption,
+                    fontsize=48,
+                    color="white",
+                    font="Arial",  # или "Helvetica"
+                    method="caption"
+                )
                 .set_duration(FRAME_DURATION)
                 .set_position(("center", "bottom"))
                 .margin(bottom=80, opacity=0)
-                .fadein(0.3)
             )
+
             overlays.append(txt)
 
         final = CompositeVideoClip(overlays)
