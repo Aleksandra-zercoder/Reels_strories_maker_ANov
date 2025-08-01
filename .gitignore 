@@ -1,0 +1,32 @@
+# 🔒 Безопасность
+.env
+config.py
+generated/iam_token.json
+
+# 🐍 Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.log
+*.sqlite3
+
+# 🧪 Тесты и временные файлы
+*.bak
+*.swp
+.DS_Store
+
+# 🛠️ IDE и окружения
+.vscode/
+.idea/
+.env.*
+*.egg-info/
+venv/
+env/
+.venv/
+
+# 📁 Файлы проекта
+output/
+generated/
+input_images/
+input_music/

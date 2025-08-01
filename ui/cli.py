@@ -14,6 +14,8 @@ def get_args():
     parser.add_argument("--logo", type=str, help="Путь к логотипу PNG или JPG")
     parser.add_argument("--logo_size", type=int, default=100, help="Высота логотипа в пикселях (по умолчанию: 100)")
     parser.add_argument("--caption", type=str, help="Текст, который отобразится на видео")
+    parser.add_argument("--slide_texts", nargs="*", help="Тексты к каждому слайду")
+
     return parser.parse_args()
 
 
